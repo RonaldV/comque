@@ -8,7 +8,7 @@
     <owners>Ronald Verhaegen</owners>
     <licenseUrl>https://github.com/RonaldV/comque/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/RonaldV/comque</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Command query execution library using the mediator pattern.</description>
     <releaseNotes></releaseNotes>
@@ -16,6 +16,6 @@
     <tags>commands queries</tags>
   </metadata>
   <files>
-	<file src="Comque\bin\$configuration$\Comque.dll" target="lib\net40\" />
+	<file src="bin\$configuration$\Comque.dll" target="lib\net40\" />
   </files>
 </package>
