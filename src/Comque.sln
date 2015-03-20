@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comque.Autofac.TestConsole", "Comque.Autofac.TestConsole\Comque.Autofac.TestConsole.csproj", "{5996E707-ADDA-49FA-9F65-0B922B3B90EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comque", "Comque\Comque.csproj", "{3A68F59C-0F18-481F-8252-9E4634C9C272}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5996E707-ADDA-49FA-9F65-0B922B3B90EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5996E707-ADDA-49FA-9F65-0B922B3B90EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5996E707-ADDA-49FA-9F65-0B922B3B90EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5996E707-ADDA-49FA-9F65-0B922B3B90EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
