@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Comque</id>
+    <version>$version$</version>
+    <title>Comque</title>
+    <authors>Ronald Verhaegen</authors>
+    <owners>Ronald Verhaegen</owners>
+    <licenseUrl>https://github.com/RonaldV/comque/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/RonaldV/comque</projectUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Command query execution library using the mediator pattern.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright &#x00A9; Ronald Verhaegen.  All rights reserved.</copyright>
+    <tags>commands queries</tags>
+  </metadata>
+  <files>
+	<file src="Comque\bin\$configuration$\Comque.dll" target="lib\net40\" />
+  </files>
+</package>
