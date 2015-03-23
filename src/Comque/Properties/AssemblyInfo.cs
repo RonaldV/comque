@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Comque")]
-[assembly: AssemblyDescription("Command Query execution library using the mediator pattern.")]
+[assembly: AssemblyDescription("Command query execution library using the mediator pattern.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ronald Verhaegen")]
 [assembly: AssemblyProduct("Comque")]
