@@ -20,12 +20,27 @@ It is a PCL library so it can be used in PCL projects.
         }
     }
     
+### Async query handler
+
+    public class GetHelloNameHandler : IAsyncQueryHandler<GetHelloName, string>
+    {
+        public async Task<string> HandleAsync(GetHelloName query)
+        {
+            // await some long running process
+            return string.Format("Hello {0}!", query.Name);
+        }
+    }
+    
 ### Query execution
 
+    // Synchronous
     var message = mediator.Execute(new GetHelloName { Name = "world" });
+    
+    // Asynchronous
     var message = await mediator.ExecuteAsync(new GetHelloName { Name = "world" });
     
-    
+***
+
 ### Command
 
     public class WriteToConsole : ICommand
@@ -34,6 +49,7 @@ It is a PCL library so it can be used in PCL projects.
     }
 
 ### Command handler
+Needed for synchronous execution
 
     public class WriteToConsoleHandler : ICommandHandler<WriteToConsole, Result>
     {
@@ -41,6 +57,20 @@ It is a PCL library so it can be used in PCL projects.
         {
             Console.WriteLine(command.Message);
           
+            return Result.Success();
+        }
+    }
+
+### Async command handler
+Needed for asynchronous execution
+
+    public class WriteToConsoleAsyncHandler : IAsyncCommandHandler<WriteToConsole, Result>
+    {
+        public async Task<Result> HandleAsync(WriteToConsole command)
+        {
+            // await some long running process
+            Console.WriteLine(command.Message);
+            
             return Result.Success();
         }
     }
