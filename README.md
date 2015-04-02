@@ -22,7 +22,7 @@ It is a PCL library so it can be used in PCL projects.
     
 ### Async query handler
 
-    public class GetHelloNameHandler : IAsyncQueryHandler<GetHelloName, string>
+    public class GetHelloNameAsyncHandler : IAsyncQueryHandler<GetHelloName, string>
     {
         public async Task<string> HandleAsync(GetHelloName query)
         {
