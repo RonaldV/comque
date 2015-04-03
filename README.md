@@ -1,6 +1,8 @@
 # Comque
 Comque is a .NET command query execution library using the mediator pattern.
-It is a PCL library so it can be used in PCL projects.
+It is a [PCL](https://msdn.microsoft.com/en-us/library/vstudio/gg597391%28v=vs.100%29.aspx) library so it can be used in most platforms.
+
+A [nuget package](https://www.nuget.org/packages/Comque/) is available.
 
 ## Examples
 ### Query
