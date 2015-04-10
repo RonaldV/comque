@@ -44,6 +44,16 @@
             return new Result<TContent>(ResultStatus.Forbidden, message);
         }
 
+        public static Result<TContent> InvalidInput(string message = null)
+        {
+            return new Result<TContent>(ResultStatus.InvalidInput, message);
+        }
+
+        public static Result<TContent> InvalidOutput(string message = null)
+        {
+            return new Result<TContent>(ResultStatus.InvalidOutput, message);
+        }
+
         public static Result<TContent> Error(string message = null)
         {
             return new Result<TContent>(ResultStatus.Error, message);
@@ -74,6 +84,16 @@
         public static Result Forbidden(string message = null)
         {
             return new Result(ResultStatus.Forbidden, message);
+        }
+
+        public static Result InvalidInput(string message = null)
+        {
+            return new Result(ResultStatus.InvalidInput, message);
+        }
+
+        public static Result InvalidOutput(string message = null)
+        {
+            return new Result(ResultStatus.InvalidOutput, message);
         }
 
         public static Result Error(string message = null)
