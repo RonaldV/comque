@@ -11,18 +11,15 @@
         Error
     }
 
-    public class Result<TContent>
+    public class Result<TContent> : Result
     {
         public Result(ResultStatus status, string message = null, TContent content = default(TContent))
+            : base(status, message)
         {
-            Status = status;
-            Message = message;
             Content = content;
         }
 
-        public ResultStatus Status { get; private set; }
         public TContent Content { get; private set; }
-        public string Message { get; private set; }
 
         public static Result<TContent> Success()
         {
