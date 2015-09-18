@@ -2,13 +2,11 @@
 
 namespace Comque.Autofac.TestConsole
 {
-    public class WriteToConsoleHandler : ICommandHandler<WriteToConsole, Result>
+    public class WriteToConsoleHandler : ICommandHandler<WriteToConsole>
     {
-        public Result Handle(WriteToConsole command)
+        public void Handle(WriteToConsole command)
         {
             Console.WriteLine(command.Message);
-
-            return Result.Success();
         }
     }
 }

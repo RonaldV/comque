@@ -4,6 +4,9 @@ namespace Comque
 {
     public interface IMediator
     {
+        void Execute(ICommand command);
+        Task ExecuteAsync(ICommand command);
+
         TResult Execute<TResult>(ICommand<TResult> command);
         Task<TResult> ExecuteAsync<TResult>(ICommand<TResult> command);
 

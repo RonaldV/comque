@@ -21,37 +21,37 @@
 
         public TContent Content { get; private set; }
 
-        public static Result<TContent> Success()
-        {
-            return new Result<TContent>(ResultStatus.Success);
-        }
-
         public static Result<TContent> Success(TContent content)
         {
             return new Result<TContent>(ResultStatus.Success, content: content);
         }
 
-        public static Result<TContent> NotFound(string message = null)
+        public new static Result<TContent> Success()
+        {
+            return new Result<TContent>(ResultStatus.Success);
+        }
+
+        public new static Result<TContent> NotFound(string message = null)
         {
             return new Result<TContent>(ResultStatus.NotFound, message);
         }
 
-        public static Result<TContent> Forbidden(string message = null)
+        public new static Result<TContent> Forbidden(string message = null)
         {
             return new Result<TContent>(ResultStatus.Forbidden, message);
         }
 
-        public static Result<TContent> InvalidInput(string message = null)
+        public new static Result<TContent> InvalidInput(string message = null)
         {
             return new Result<TContent>(ResultStatus.InvalidInput, message);
         }
 
-        public static Result<TContent> InvalidOutput(string message = null)
+        public new static Result<TContent> InvalidOutput(string message = null)
         {
             return new Result<TContent>(ResultStatus.InvalidOutput, message);
         }
 
-        public static Result<TContent> Error(string message = null)
+        public new static Result<TContent> Error(string message = null)
         {
             return new Result<TContent>(ResultStatus.Error, message);
         }

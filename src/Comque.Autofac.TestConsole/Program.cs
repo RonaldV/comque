@@ -11,6 +11,7 @@ namespace Comque.Autofac.TestConsole
             var container = BuildContainer();
             var mediator = container.Resolve<IMediator>();
 
+            // https://stackoverflow.com/questions/1406148/autofac-resolve-all-instances-of-a-type
             var message = mediator.Execute(new GetHelloName { Name = "world" });
             mediator.Execute(new WriteToConsole { Message = message });
 

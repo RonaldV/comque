@@ -1,10 +1,10 @@
 ﻿namespace Comque
 {
-    public interface ICommand<out TContent>
+    public interface ICommand
     {
     }
 
-    public interface ICommand : ICommand<Result>
+    public interface ICommand<out TContent>
     {
     }
 }
