@@ -33,6 +33,8 @@ namespace Comque.Autofac.TestConsole
             //builder.RegisterType<WriteCommandHandler>().AsImplementedInterfaces();
             //builder.RegisterAssemblyTypes(typeof(Program).Assembly).AsImplementedInterfaces();
             //builder.RegisterAssemblyTypes(assembly).AsClosedTypesOf(typeof(IMessageHandler<,>));
+            builder.RegisterAssemblyTypes(assembly).AsClosedTypesOf(typeof(ICommandHandler<>));
+            builder.RegisterAssemblyTypes(assembly).AsClosedTypesOf(typeof(IAsyncCommandHandler<>));
             builder.RegisterAssemblyTypes(assembly).AsClosedTypesOf(typeof(ICommandHandler<,>));
             builder.RegisterAssemblyTypes(assembly).AsClosedTypesOf(typeof(IAsyncCommandHandler<,>));
             builder.RegisterAssemblyTypes(assembly).AsClosedTypesOf(typeof(IQueryHandler<,>));

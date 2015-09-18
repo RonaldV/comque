@@ -67,6 +67,10 @@ namespace Comque
 
         private Type CreateHandlerType(Type emptyHandlerType, Type resultType, Type messageType)
         {
+            if (resultType == null)
+            {
+                return emptyHandlerType.MakeGenericType(messageType);
+            }
             return emptyHandlerType.MakeGenericType(messageType, resultType);
         }
 
