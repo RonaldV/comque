@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comque.Autofac.TestConsole", "Comque.Autofac.TestConsole\Comque.Autofac.TestConsole.csproj", "{5996E707-ADDA-49FA-9F65-0B922B3B90EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comque", "Comque\Comque.csproj", "{3A68F59C-0F18-481F-8252-9E4634C9C272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comque.WebApi", "Comque.WebApi\Comque.WebApi.csproj", "{6C957E50-14FC-47BF-8818-9881DB7CAB41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comque.Validation", "Comque.Validation\Comque.Validation.csproj", "{88B293DE-5630-477C-B5A3-B8CC9CBFA567}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A68F59C-0F18-481F-8252-9E4634C9C272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C957E50-14FC-47BF-8818-9881DB7CAB41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C957E50-14FC-47BF-8818-9881DB7CAB41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C957E50-14FC-47BF-8818-9881DB7CAB41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C957E50-14FC-47BF-8818-9881DB7CAB41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B293DE-5630-477C-B5A3-B8CC9CBFA567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B293DE-5630-477C-B5A3-B8CC9CBFA567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B293DE-5630-477C-B5A3-B8CC9CBFA567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B293DE-5630-477C-B5A3-B8CC9CBFA567}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
