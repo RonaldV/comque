@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace Comque.Validation
 {
@@ -18,10 +19,10 @@ namespace Comque.Validation
             return base.Execute<TResult>(query);
         }
 
-        public override Task<TResult> ExecuteAsync<TResult>(IQuery<TResult> query)
+        public override Task<TResult> ExecuteAsync<TResult>(IQuery<TResult> query, CancellationToken cancellationToken)
         {
             validator.Validate(query);
-            return base.ExecuteAsync<TResult>(query);
+            return base.ExecuteAsync<TResult>(query, cancellationToken);
         }
 
 
@@ -31,10 +32,10 @@ namespace Comque.Validation
             base.Execute(command);
         }
 
-        public override Task ExecuteAsync(ICommand command)
+        public override Task ExecuteAsync(ICommand command, CancellationToken cancellationToken)
         {
             validator.Validate(command);
-            return base.ExecuteAsync(command);
+            return base.ExecuteAsync(command, cancellationToken);
         }
 
 
@@ -44,10 +45,10 @@ namespace Comque.Validation
             return base.Execute<TResult>(command);
         }
 
-        public override Task<TResult> ExecuteAsync<TResult>(ICommand<TResult> command)
+        public override Task<TResult> ExecuteAsync<TResult>(ICommand<TResult> command, CancellationToken cancellationToken)
         {
             validator.Validate(command);
-            return base.ExecuteAsync<TResult>(command);
+            return base.ExecuteAsync<TResult>(command, cancellationToken);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Threading;
+using System.Threading.Tasks;
 
 namespace Comque
 {
@@ -11,7 +12,7 @@ namespace Comque
     public interface IAsyncCommandHandler<in TCommand>
         where TCommand : ICommand
     {
-        Task HandleAsync(TCommand command);
+        Task HandleAsync(TCommand command, CancellationToken cancellationToken);
     }
 
     public interface ICommandHandler<in TCommand, out TResult>
@@ -23,6 +24,6 @@ namespace Comque
     public interface IAsyncCommandHandler<in TCommand, TResult>
         where TCommand : ICommand<TResult>
     {
-        Task<TResult> HandleAsync(TCommand command);
+        Task<TResult> HandleAsync(TCommand command, CancellationToken cancellationToken);
     }
 }
